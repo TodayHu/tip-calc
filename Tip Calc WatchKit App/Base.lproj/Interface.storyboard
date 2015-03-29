@@ -14,7 +14,11 @@
                             <variation key="device=watch42mm" text="Meal Total:"/>
                         </label>
                         <label width="1" alignment="center" text="$25" textAlignment="center" id="6by-Ah-0rB"/>
-                        <slider width="1" alignment="left" value="1" maximum="3" steps="3" id="9N8-7f-F2g"/>
+                        <slider width="1" alignment="left" continuous="YES" value="25" minimum="10" maximum="100" steps="18" id="9N8-7f-F2g">
+                            <connections>
+                                <action selector="sliderChanged:" destination="AgC-eL-Hgc" id="bNS-Z2-IL4"/>
+                            </connections>
+                        </slider>
                         <separator alignment="left" id="G4X-qG-GRD"/>
                         <label alignment="left" text="Label" id="yYp-65-NhO">
                             <variation key="device=watch42mm" text="Tip Amount:"/>
@@ -73,6 +77,9 @@
                             <include reference="hVw-eH-Vso"/>
                         </mask>
                     </variation>
+                    <connections>
+                        <outlet property="dollarLabel" destination="6by-Ah-0rB" id="xZK-b6-vGJ"/>
+                    </connections>
                 </controller>
             </objects>
             <point key="canvasLocation" x="9.5897435897435912" y="407.5641025641026"/>

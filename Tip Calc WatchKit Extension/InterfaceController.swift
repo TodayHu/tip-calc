@@ -11,6 +11,13 @@ import Foundation
 
 
 class InterfaceController: WKInterfaceController {
+    @IBOutlet weak var dollarLabel: WKInterfaceLabel!
+    
+    
+    @IBAction func sliderChanged(value: Float) {
+        var intValue = Int(value)
+        self.dollarLabel.setText("$\(intValue)")
+    }
     
     @IBAction func fifteenTapped() {
             self.pushControllerWithName("resultsController", context: nil)
