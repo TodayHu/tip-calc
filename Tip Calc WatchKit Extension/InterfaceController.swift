@@ -11,24 +11,28 @@ import Foundation
 
 
 class InterfaceController: WKInterfaceController {
+    
+    var costOfMeal = 25
+    
     @IBOutlet weak var dollarLabel: WKInterfaceLabel!
     
     
     @IBAction func sliderChanged(value: Float) {
         var intValue = Int(value)
         self.dollarLabel.setText("$\(intValue)")
+        self.costOfMeal = intValue
     }
     
     @IBAction func fifteenTapped() {
-        self.pushControllerWithName("resultsController", context: ["costOfMeal":50, "tipPercent": 15])
+        self.pushControllerWithName("resultsController", context: ["costOfMeal":self.costOfMeal, "tipPercent": 15])
     }
     
     @IBAction func eighteenTapped() {
-            self.pushControllerWithName("resultsController", context: ["costOfMeal":50, "tipPercent": 18])
+            self.pushControllerWithName("resultsController", context: ["costOfMeal":self.costOfMeal, "tipPercent": 18])
     }
     
     @IBAction func twentyTapped() {
-            self.pushControllerWithName("resultsController", context: ["costOfMeal":50, "tipPercent": 20])
+            self.pushControllerWithName("resultsController", context: ["costOfMeal":self.costOfMeal, "tipPercent": 20])
     }
 
     override func awakeWithContext(context: AnyObject?) {
