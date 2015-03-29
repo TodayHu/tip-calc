@@ -12,8 +12,16 @@ import Foundation
 
 class ResultsController: WKInterfaceController {
 
+    @IBOutlet weak var tipLabel: WKInterfaceLabel!
+    
     override func awakeWithContext(context: AnyObject?) {
         super.awakeWithContext(context)
+        
+        var tipDictionary = context as [String:Int]
+        
+        var tipPercentage = tipDictionary["tipPercent"]!
+        
+        self.tipLabel.setText("\(tipPercentage)% Tip:")
         
         // Configure interface objects here.
     }

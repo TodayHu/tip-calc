@@ -96,7 +96,7 @@
                             <variation key="device=watch42mm" text="$25"/>
                         </label>
                         <label width="1" alignment="left" text="Label" id="Fy8-uu-Hl9">
-                            <variation key="device=watch42mm" text="Tips Amount:"/>
+                            <variation key="device=watch42mm" text="Tip:"/>
                         </label>
                         <label width="1" alignment="right" text="Label" textAlignment="right" id="nPL-yc-okU">
                             <variation key="device=watch42mm" text="$2.50"/>
@@ -128,6 +128,9 @@
                             <include reference="Ppc-6a-DN5"/>
                         </mask>
                     </variation>
+                    <connections>
+                        <outlet property="tipLabel" destination="Fy8-uu-Hl9" id="Qqg-8q-4xI"/>
+                    </connections>
                 </controller>
             </objects>
             <point key="canvasLocation" x="210.97435897435898" y="407.5641025641026"/>
