@@ -21,9 +21,21 @@
                         </label>
                         <group width="1" alignment="left" id="hVw-eH-Vso">
                             <items>
-                                <button width="0.33329999999999999" alignment="left" title="15%" id="fmT-Ei-eDu"/>
-                                <button width="0.33329999999999999" alignment="left" title="18%" id="Cgo-rA-dbx"/>
-                                <button width="0.33329999999999999" alignment="left" title="20%" id="Z4z-sU-xFW"/>
+                                <button width="0.33329999999999999" alignment="left" title="15%" id="fmT-Ei-eDu">
+                                    <connections>
+                                        <action selector="fifteenTapped" destination="AgC-eL-Hgc" id="UlL-OB-38D"/>
+                                    </connections>
+                                </button>
+                                <button width="0.33329999999999999" alignment="left" title="18%" id="Cgo-rA-dbx">
+                                    <connections>
+                                        <action selector="eighteenTapped" destination="AgC-eL-Hgc" id="huG-cu-C8n"/>
+                                    </connections>
+                                </button>
+                                <button width="0.33329999999999999" alignment="left" title="20%" id="Z4z-sU-xFW">
+                                    <connections>
+                                        <action selector="twentyTapped" destination="AgC-eL-Hgc" id="YNu-Tu-MoP"/>
+                                    </connections>
+                                </button>
                             </items>
                             <variation key="default">
                                 <mask key="items">
@@ -63,7 +75,16 @@
                     </variation>
                 </controller>
             </objects>
-            <point key="canvasLocation" x="136" y="408"/>
+            <point key="canvasLocation" x="9.5897435897435912" y="407.5641025641026"/>
+        </scene>
+        <!--Interface Controller-->
+        <scene sceneID="EoD-oT-flB">
+            <objects>
+                <controller id="DzX-Ca-eCR">
+                    <color key="backgroundColor" red="0.20438713416629284" green="1" blue="0.3190463471107261" alpha="1" colorSpace="calibratedRGB"/>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="210.97435897435898" y="407.5641025641026"/>
         </scene>
     </scenes>
 </document>

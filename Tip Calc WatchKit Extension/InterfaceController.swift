@@ -11,6 +11,18 @@ import Foundation
 
 
 class InterfaceController: WKInterfaceController {
+    
+    @IBAction func fifteenTapped() {
+        
+    }
+    
+    @IBAction func eighteenTapped() {
+        
+    }
+    
+    @IBAction func twentyTapped() {
+        
+    }
 
     override func awakeWithContext(context: AnyObject?) {
         super.awakeWithContext(context)
