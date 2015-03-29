@@ -1,15 +1,69 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="6221" systemVersion="13E28" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="AgC-eL-Hgc">
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="6751" systemVersion="14D113c" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="AgC-eL-Hgc">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6213"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="3733"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6736"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="3737"/>
     </dependencies>
     <scenes>
         <!--Interface Controller-->
         <scene sceneID="aou-V4-d1y">
             <objects>
-                <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModuleProvider="target"/>
+                <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModule="Tip_Calc_WatchKit_App" customModuleProvider="target">
+                    <items>
+                        <label alignment="left" text="Label" id="2Le-MG-Sdg">
+                            <variation key="device=watch42mm" text="Meal Total:"/>
+                        </label>
+                        <label width="1" alignment="center" text="$25" textAlignment="center" id="6by-Ah-0rB"/>
+                        <slider width="1" alignment="left" value="1" maximum="3" steps="3" id="9N8-7f-F2g"/>
+                        <separator alignment="left" id="G4X-qG-GRD"/>
+                        <label alignment="left" text="Label" id="yYp-65-NhO">
+                            <variation key="device=watch42mm" text="Tip Amount:"/>
+                        </label>
+                        <group width="1" alignment="left" id="hVw-eH-Vso">
+                            <items>
+                                <button width="0.33329999999999999" alignment="left" title="15%" id="fmT-Ei-eDu"/>
+                                <button width="0.33329999999999999" alignment="left" title="18%" id="Cgo-rA-dbx"/>
+                                <button width="0.33329999999999999" alignment="left" title="20%" id="Z4z-sU-xFW"/>
+                            </items>
+                            <variation key="default">
+                                <mask key="items">
+                                    <exclude reference="fmT-Ei-eDu"/>
+                                    <exclude reference="Cgo-rA-dbx"/>
+                                    <exclude reference="Z4z-sU-xFW"/>
+                                </mask>
+                            </variation>
+                            <variation key="device=watch42mm">
+                                <mask key="items">
+                                    <include reference="fmT-Ei-eDu"/>
+                                    <include reference="Cgo-rA-dbx"/>
+                                    <include reference="Z4z-sU-xFW"/>
+                                </mask>
+                            </variation>
+                        </group>
+                    </items>
+                    <variation key="default">
+                        <mask key="items">
+                            <exclude reference="2Le-MG-Sdg"/>
+                            <exclude reference="6by-Ah-0rB"/>
+                            <exclude reference="9N8-7f-F2g"/>
+                            <exclude reference="G4X-qG-GRD"/>
+                            <exclude reference="yYp-65-NhO"/>
+                            <exclude reference="hVw-eH-Vso"/>
+                        </mask>
+                    </variation>
+                    <variation key="device=watch42mm">
+                        <mask key="items">
+                            <include reference="2Le-MG-Sdg"/>
+                            <include reference="6by-Ah-0rB"/>
+                            <include reference="9N8-7f-F2g"/>
+                            <include reference="G4X-qG-GRD"/>
+                            <include reference="yYp-65-NhO"/>
+                            <include reference="hVw-eH-Vso"/>
+                        </mask>
+                    </variation>
+                </controller>
             </objects>
+            <point key="canvasLocation" x="136" y="408"/>
         </scene>
     </scenes>
 </document>
