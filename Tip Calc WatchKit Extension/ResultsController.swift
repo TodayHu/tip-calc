@@ -14,6 +14,12 @@ class ResultsController: WKInterfaceController {
 
     @IBOutlet weak var tipLabel: WKInterfaceLabel!
     
+    @IBOutlet weak var costOfMealLabel: WKInterfaceLabel!
+    
+    @IBOutlet weak var tipDollarAmountLable: WKInterfaceLabel!
+    
+    @IBOutlet weak var totalCostOfMealLabel: WKInterfaceLabel!
+    
     override func awakeWithContext(context: AnyObject?) {
         super.awakeWithContext(context)
         
@@ -21,7 +27,16 @@ class ResultsController: WKInterfaceController {
         
         var tipPercentage = tipDictionary["tipPercent"]!
         
+        var costOfMeal = tipDictionary["costOfMeal"]!
+        
+        var tipDollarAmount = Float(costOfMeal) * Float(tipPercentage) * 0.01
+        
+        var totalMealCost = tipDollarAmount + Float(costOfMeal)
+        
         self.tipLabel.setText("\(tipPercentage)% Tip:")
+        self.costOfMealLabel.setText("$\(costOfMeal)")
+        self.tipDollarAmountLable.setText("$\(tipDollarAmount)")
+        self.totalCostOfMealLabel.setText("$\(totalMealCost)")
         
         // Configure interface objects here.
     }

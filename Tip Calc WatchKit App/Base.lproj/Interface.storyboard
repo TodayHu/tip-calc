@@ -129,7 +129,10 @@
                         </mask>
                     </variation>
                     <connections>
+                        <outlet property="costOfMealLabel" destination="INR-BU-P6w" id="IKG-HZ-OFN"/>
+                        <outlet property="tipDollarAmountLable" destination="nPL-yc-okU" id="ezQ-NJ-HhW"/>
                         <outlet property="tipLabel" destination="Fy8-uu-Hl9" id="Qqg-8q-4xI"/>
+                        <outlet property="totalCostOfMealLabel" destination="Ppc-6a-DN5" id="YIQ-OE-e8R"/>
                     </connections>
                 </controller>
             </objects>
