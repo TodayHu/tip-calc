@@ -19,6 +19,7 @@
 		DEBD5A9D1AC89ADC00055B69 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DEBD5A9B1AC89ADC00055B69 /* Interface.storyboard */; };
 		DEBD5A9F1AC89ADC00055B69 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DEBD5A9E1AC89ADC00055B69 /* Images.xcassets */; };
 		DEBD5AA21AC89ADC00055B69 /* Tip Calc WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = DEBD5A8A1AC89ADB00055B69 /* Tip Calc WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		DEBD5AAB1AC8A70300055B69 /* ResultsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEBD5AAA1AC8A70300055B69 /* ResultsController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -78,6 +79,7 @@
 		DEBD5A9A1AC89ADC00055B69 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DEBD5A9C1AC89ADC00055B69 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
 		DEBD5A9E1AC89ADC00055B69 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		DEBD5AAA1AC8A70300055B69 /* ResultsController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResultsController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -171,6 +173,7 @@
 				DEBD5A8E1AC89ADB00055B69 /* InterfaceController.swift */,
 				DEBD5A901AC89ADB00055B69 /* Images.xcassets */,
 				DEBD5A8C1AC89ADB00055B69 /* Supporting Files */,
+				DEBD5AAA1AC8A70300055B69 /* ResultsController.swift */,
 			);
 			path = "Tip Calc WatchKit Extension";
 			sourceTree = "<group>";
@@ -379,6 +382,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DEBD5AAB1AC8A70300055B69 /* ResultsController.swift in Sources */,
 				DEBD5A8F1AC89ADB00055B69 /* InterfaceController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

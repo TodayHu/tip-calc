@@ -77,11 +77,50 @@
             </objects>
             <point key="canvasLocation" x="9.5897435897435912" y="407.5641025641026"/>
         </scene>
-        <!--Interface Controller-->
+        <!--resultsController-->
         <scene sceneID="EoD-oT-flB">
             <objects>
-                <controller id="DzX-Ca-eCR">
-                    <color key="backgroundColor" red="0.20438713416629284" green="1" blue="0.3190463471107261" alpha="1" colorSpace="calibratedRGB"/>
+                <controller identifier="resultsController" id="DzX-Ca-eCR" customClass="ResultsController" customModule="Tip_Calc_WatchKit_Extension">
+                    <items>
+                        <label width="1" alignment="left" text="Label" id="6gU-pr-Tw7">
+                            <variation key="device=watch42mm" text="Meal Total:"/>
+                        </label>
+                        <label width="1" alignment="right" text="Label" textAlignment="right" id="INR-BU-P6w">
+                            <variation key="device=watch42mm" text="$25"/>
+                        </label>
+                        <label width="1" alignment="left" text="Label" id="Fy8-uu-Hl9">
+                            <variation key="device=watch42mm" text="Tips Amount:"/>
+                        </label>
+                        <label width="1" alignment="right" text="Label" textAlignment="right" id="nPL-yc-okU">
+                            <variation key="device=watch42mm" text="$2.50"/>
+                        </label>
+                        <label width="1" alignment="left" text="Label" id="S2v-Cb-vpO">
+                            <variation key="device=watch42mm" text="Total:"/>
+                        </label>
+                        <label width="1" alignment="right" text="Label" textAlignment="right" id="Ppc-6a-DN5">
+                            <variation key="device=watch42mm" text="$27.50"/>
+                        </label>
+                    </items>
+                    <variation key="default">
+                        <mask key="items">
+                            <exclude reference="6gU-pr-Tw7"/>
+                            <exclude reference="INR-BU-P6w"/>
+                            <exclude reference="Fy8-uu-Hl9"/>
+                            <exclude reference="nPL-yc-okU"/>
+                            <exclude reference="S2v-Cb-vpO"/>
+                            <exclude reference="Ppc-6a-DN5"/>
+                        </mask>
+                    </variation>
+                    <variation key="device=watch42mm">
+                        <mask key="items">
+                            <include reference="6gU-pr-Tw7"/>
+                            <include reference="INR-BU-P6w"/>
+                            <include reference="Fy8-uu-Hl9"/>
+                            <include reference="nPL-yc-okU"/>
+                            <include reference="S2v-Cb-vpO"/>
+                            <include reference="Ppc-6a-DN5"/>
+                        </mask>
+                    </variation>
                 </controller>
             </objects>
             <point key="canvasLocation" x="210.97435897435898" y="407.5641025641026"/>
