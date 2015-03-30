@@ -7,4 +7,5 @@ Another simple app that is helping me learn Swift and the Apple Watch platform. 
 <ul>
 	<li>Properly comment code</li>
 	<li>Figure out proper way to display two decimal places and remove embarrassing hack</li>
+	<li>Add slider to set tip percentage from 10% - 30%</li>
 </ul>
