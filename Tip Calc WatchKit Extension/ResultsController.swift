@@ -31,12 +31,13 @@ class ResultsController: WKInterfaceController {
         
         var tipDollarAmount = Float(costOfMeal) * Float(tipPercentage) * 0.01
         
-        var totalMealCost = tipDollarAmount + Float(costOfMeal)
+        var totalMealCost = Float(tipDollarAmount) + Float(costOfMeal)
+        
         
         self.tipLabel.setText("\(tipPercentage)% Tip:")
         self.costOfMealLabel.setText("$\(costOfMeal)")
-        self.tipDollarAmountLable.setText("$\(tipDollarAmount)")
-        self.totalCostOfMealLabel.setText("$\(totalMealCost)")
+        self.tipDollarAmountLable.setText("$\(tipDollarAmount)0")
+        self.totalCostOfMealLabel.setText("$\(totalMealCost)0")
         
         // Configure interface objects here.
     }
